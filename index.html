@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Registration System</h1>
+    
+    <!-- Form for entering student details -->
+    <form id="studentForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" required>
+        
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" required pattern="\d+">
+        
+        <label for="emailId">Email ID:</label>
+        <input type="email" id="emailId" required>
+        
+        <label for="contactNo">Contact No:</label>
+        <input type="text" id="contactNo" required pattern="\d{10}">
+        
+        <button type="submit">Add/Update Record</button>
+    </form>
+    
+    <!-- Table for displaying student records -->
+    <table id="recordsTable">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Student ID</th>
+                <th>Email ID</th>
+                <th>Contact Number</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Student records will be injected here by JavaScript -->
+        </tbody>
+    </table>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
